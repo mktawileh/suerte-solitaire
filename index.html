@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <title>Solitaire</title>
+  <link rel="stylesheet" href="game/style.css">
+  <script src=game/anime.js></script>
+</head>
+<body class="preload">
+
+ <div id="ddd"></div>
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url(q02th.jpg);
+      margin: 0;
+    }
+    .no-animation {
+      animation: none;
+    }
+
+    .preload * {
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -ms-transition: none !important;
+      -o-transition: none !important;
+    }
+
+
+    @keyframes adding {
+      0% {
+        /* transform: scale(.5); */
+        /* left: 100%; */
+        /* transform: scale(1.1); */
+      }
+    }
+
+  </style>
+  <script>
+    window.addEventListener( 'load', function( event ) {
+        document.querySelector('body').classList.remove("preload");
+    });
+    // Custom function for create an element
+    function ce(tagName, attributes, children) {
+      let e = document.createElement(tagName);
+      e.__defineGetter__("position", () => e.getBoundingClientRect());
+
+      if (attributes) {
+        for (let key in attributes)
+          e.setAttribute(key, attributes[key]);
+      }
+
+      if (children) {
+        if (typeof children == "string") {
+          e.innerHTML = children;
+        } else {
+          for (let i = 0; i < children.length; i++) {
+            if (children[i].nodeType == 1)
+              e.append(children[i]);
+          }
+        }
+      }
+
+      return e;
+    }
+  </script>
+
+
+  <script src=game/Deck.js></script>
+  <script src=game/Boxes.js></script>
+  <script src=game/_main.js></script>
+</body>
+</html>
