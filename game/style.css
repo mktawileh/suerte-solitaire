@@ -59,7 +59,7 @@
 .card-game-element .card {
   position: absolute;
   display: inline-block;
-  width: 67px;
+  width: 69px;
   height: 106px;
   margin: 5px;
   border-radius: 5.4px;
@@ -91,7 +91,7 @@
   width: 100%;
   height: 100%;
   border-radius: 5.4px;
-  background-image: url(imgs/cards.jpg);
+  background-image: url(imgs/deck-of-52-cards.svg);
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -102,75 +102,75 @@
 }
 
 .card-game-element .card .suit_1 {
-  background-position-y: -217px;
+  background-position-y: -0px;
 }
 
 .card-game-element .card .suit_2 {
-  background-position-y: -1px;
+  background-position-y: -106.5px;
 }
 
 .card-game-element .card .suit_3 {
-  background-position-y: -109px;
+  background-position-y: -213px;
 }
 
 .card-game-element .card .suit_4 {
-  background-position-y: -324px;
+  background-position-y: -319.5px;
 }
 
-.card-game-element .card .suit_5 {
+/* .card-game-element .card .suit_5 {
   background-position-y: -432px;
-}
+} */
 
 .card-game-element .card .num_1 {
-  background-position-x: -1px;
+  background-position-x: -0px;
 }
 
 .card-game-element .card .num_2 {
-  background-position-x: -70px;
+  background-position-x: -69.23px;
 }
 
 .card-game-element .card .num_3 {
-  background-position-x: -140px;
+  background-position-x: -138.46px;
 }
 
 .card-game-element .card .num_4 {
-  background-position-x: -209px;
+  background-position-x: -207.69px;
 }
 
 .card-game-element .card .num_5 {
-  background-position-x: -278px;
+  background-position-x: -276.92px;
 }
 
 .card-game-element .card .num_6 {
-  background-position-x: -347px;
+  background-position-x: -346.15px;
 }
 
 .card-game-element .card .num_7 {
-  background-position-x: -417px;
+  background-position-x: -415.38px;
 }
 
 .card-game-element .card .num_8 {
-  background-position-x: -486px;
+  background-position-x: -484.61px;
 }
 
 .card-game-element .card .num_9 {
-  background-position-x: -555px;
+  background-position-x: -553.84px;
 }
 
 .card-game-element .card .num_10 {
-  background-position-x: -624px;
+  background-position-x: -623.07px;
 }
 
 .card-game-element .card .num_11 {
-  background-position-x: -694px;
+  background-position-x: -692.3px;
 }
 
 .card-game-element .card .num_12 {
-  background-position-x: -763px;
+  background-position-x: -761.53px;
 }
 
 .card-game-element .card .num_13 {
-  background-position-x: -832px;
+  background-position-x: -830.76px;
 }
 
 .card-game-element .card.flipped {
